@@ -1,0 +1,11 @@
+[Protocol]
+exec=gnosis-qt '%u'
+protocol=gnosis
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

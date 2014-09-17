@@ -1,0 +1,2 @@
+debian/bin/gnosisd usr/bin
+src/gnosisd usr/lib/gnosis
