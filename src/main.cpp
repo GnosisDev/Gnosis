@@ -2454,37 +2454,7 @@ bool LoadBlockIndex(bool fAllowNew)
         assert(block.hashMerkleRoot == uint256("0x33668a3328bc2b9053d4b49582874cea513bbd5789e87645e507f701beef7111"));
 
         //FIND GENESIS
-/*
-         if (!fTestNet && block.GetHash() != hashGenesisBlock)
-                 {
-                     printf("Searching for genesis block...\n");
 
-                     uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
-                     uint256 thash;
-                     for(;;)
-                     {
-                         if (fShutdown)
-                           return false;
-                         //thash = Hash9(BEGIN(block.nVersion), END(block.nNonce));
-                         thash = scrypt_blockhash(CVOIDBEGIN(block.nVersion));
-                         if (thash <= hashTarget)
-                             break;
-                         if ((block.nNonce & 0xFFF) == 0)
-                         {
-                         printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
-                         }
-                         ++block.nNonce;
-                         if (block.nNonce == 0)
-                         {
-                             printf("NONCE WRAPPED, incrementing time\n");
-                             ++block.nTime;
-                        }
-                     }
-                     printf("block.nTime = %u \n", block.nTime);
-                     printf("block.nNonce = %u \n", block.nNonce);
-                     printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
-                 }
-*/
         // debug print
          //printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
          block.print();
