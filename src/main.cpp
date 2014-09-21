@@ -2453,8 +2453,6 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
         assert(block.hashMerkleRoot == uint256("0x33668a3328bc2b9053d4b49582874cea513bbd5789e87645e507f701beef7111"));
 
-        //FIND GENESIS
-
         // debug print
          //printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
          block.print();
